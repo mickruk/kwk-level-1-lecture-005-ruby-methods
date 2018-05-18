@@ -25,10 +25,6 @@
 
 We left off yesterday looking at methods. Methods allow us to name a sequence or selection of code and run it whenever we want.
 
-### CFU
-How do we create a method?
-How do we run a method?
-
 Let's play with a `greeting` method in IRB **Students should follow along in IRB**
 
 ```ruby
@@ -69,7 +65,11 @@ As we saw yesterday, that doesn't work. The reason why is an important programmi
 
 Variables have a locale, a place where they exist. We call the place in which a variable exists a "scope."
 
-**NEED GOOD SCOPE METAPHOR OR EXAMPLE - SOMETHING THAT EXISTS IN DIFFERENT PLACES, IS CALLED THE SAME, BUT GETS ITS OWN DEFINITION**
+### SCOPE METAPHOR 
+
+If English is your method and I ask you what is a "murcielago"? 
+You won't be able to answer because that word is in Spanish which is not defined in your method (the English language)
+However, if I "add" the word murcielago into your vocabulary by telling you it means bat, then now you'd be able to answer
 
 Because of variable scope, a method only have access to information defined within it. We could do the following:
 
