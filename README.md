@@ -25,6 +25,10 @@
 
 We left off yesterday looking at methods. Methods allow us to name a sequence or selection of code and run it whenever we want.
 
+### CFU
+How do we create a method?
+How do we run a method?
+
 Let's play with a `greeting` method in IRB **Students should follow along in IRB**
 
 ```ruby
