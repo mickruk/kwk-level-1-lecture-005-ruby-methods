@@ -68,7 +68,7 @@ Variables have a locale, a place where they exist. We call the place in which a 
 ### SCOPE METAPHOR 
 
 If English is your method and I ask you what is a "murcielago"? 
-You won't be able to answer because that word is in Spanish which is not defined in your method (the English language)
+You won't be able to answer because that word is in Spanish, which is not defined in your method (the English language).
 However, if I "add" the word murcielago into your vocabulary by telling you it means bat, then now you'd be able to answer
 
 Because of variable scope, a method only have access to information defined within it. We could do the following:
@@ -83,8 +83,10 @@ def greeting
   puts "#{local_greeting} #{your_name}, I'm #{my_name}, how's your #{time_of_day}?"
 end
 ```
+#### CFU
+Create your own greeting by defining the variable scopes local_greeting, your_name, my_name, and time_of_day to be something different than Shalom, Golda, Lea, and life.
 
-But now that `greeting` method is very specific, we wouldn't be able to change it to say hello in a different way to a different person.
+But now that `greeting` method is very specific, we wouldn't be able to change it to say hello in a different way to a different person without changing the actual code each time. 
 
 ## Arguments - 10 Minutes
 
@@ -115,6 +117,7 @@ greeting("Hey", "Beyonce", "Karlie", "night")
 ```
 
 You will get: `ArgumentError: wrong number of arguments (given 4, expected 0)`
+**Ask students to dissect the Argument Error: what information is the ArgumentError giving us and how might that help us figure out how to solve the issue?**
 
 Give the students 5-10 minutes to google `ruby method arguments` ruby and see if they can figure it out.
 
@@ -131,6 +134,9 @@ https://www.crondose.com/2016/09/comprehensive-guide-to-method-arguments-in-ruby
 Continue to official explanation. 
 
 Arguments allow us to pass data into a method. They are sort of like protein-transfer receptors [Protein Transfer](http://nat5biopl.edubuzz.org/_/rsrc/1359400919033/unit-1-cell-biology/2-transport/IMG_0090.JPG?height=310&width=600) [Transport](http://nat5biopl.edubuzz.org/unit-1-cell-biology/2-transport). In the same way a Cell is a self-contained thing that has to take things from the outside world, a method is like that too.
+
+**Argument Metaphor**
+Schools are self-contained entities that take students in from the outside world, but only students that are defined to be there. For example, not anyone can enter your school or go to class with you. 
 
 Let's simplify the `greeting` method (point out that it's always good to start with the simplest example when learning something new) and play with arguments.
 
@@ -184,6 +190,8 @@ d = "life"
 
 greeting(a,b,c,d)
 ```
+#### CFU
+How could you change the code to greet a family member of yours in the morning? What would you have to input into greeting ()? 
 
 **Method Argument Labs** 20 Minutes Max
 
@@ -219,6 +227,9 @@ greeting("Cardi B", "Heyyyyyy") #> "Heyyyyyy! I'm Cardi B"
 ```
 
 We tend to keep our arguments with defaults last, anyone want to guess why?
+
+#### CFU
+What is a default argument? In what situations might a default argument be useful?
 
 **Default Argument Labs** 15 minutes
 
